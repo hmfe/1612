@@ -1,0 +1,17 @@
+.button-delete {
+  background-image: linear-gradient(90deg, #ffd699, #ff9900);
+  font-size: 1em;
+  font-weight: 800;
+  padding: 10px 20px;
+}
+.button-delete:after {
+  background-color: white;
+  border-radius: 50%;
+  content: "\00d7";
+  display: inline-block;
+  font-size: 1.8em;
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 40px;
+}

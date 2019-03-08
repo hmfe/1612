@@ -1,0 +1,60 @@
+input {
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.button-add {
+  background-color: white;
+  background-image: none;
+  padding: 12px 30px;
+}
+
+.history-container {
+  margin: auto;
+  border: 1px solid grey;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.history-container > span {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+}
+
+.history-container-delete span:after {
+  content: "\00d7";
+  text-align: right;
+}
+
+.history-container-list {
+  width: 100%;
+  min-height: 100px;
+  text-align: left;
+}
+.history-container-list p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-container-list p span:nth-child(1) {
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+p span:nth-child(2) {
+  font-size: 0.8em;
+}
+p span:nth-child(2):after {
+  margin-left: 5px;
+  content: "\00d7";
+}
+
+@media screen and (min-width: 680px) {
+  .history-container {
+    max-width: 400px;
+  }
+}
